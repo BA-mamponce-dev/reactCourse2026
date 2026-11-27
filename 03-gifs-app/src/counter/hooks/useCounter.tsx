@@ -1,31 +1,30 @@
-import { useState } from "react";
+import { useState } from "react"
 
 
+export function useCounter(initialValued = 10) {
 
-export const useCounter = () => {
+    
+    const [count, setCounter] = useState(initialValued)
 
-
-    const [counter, setCounter] = useState(5)
-
-    const handleAdd =()=>{
-        setCounter(counter + 1);
+    const handleAdd = ()=>{
+        setCounter(count + 1)
     }
-
     const handleSubtract = ()=>{
-        setCounter(counter -1);
+        setCounter(count - 1)
     }
-
     const handleReset = ()=>{
-        setCounter(5)
+        setCounter(initialValued)
     }
 
-  return {
-    //values
-    counter,
+
+
+  return{
+    //Values
+    count,
     //Methods /Actions
     handleAdd,
     handleSubtract,
-    handleReset,
-
+    handleReset
   }
 }
+

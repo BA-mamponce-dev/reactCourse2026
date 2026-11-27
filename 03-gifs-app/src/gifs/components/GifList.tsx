@@ -1,4 +1,7 @@
-import type { Gif } from "../../mock-data/gifs.mock";
+//  ! import type { Gif } from "../../mock-data/gifs.mock";
+//? anteriormente de ahi provenian nuestros GIF
+
+import type { Gif } from "./interfaces/gif.interface";
 
 
 

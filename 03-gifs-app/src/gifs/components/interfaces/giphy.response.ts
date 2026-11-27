@@ -97,13 +97,11 @@ export interface FixedHeight {
 export interface Looping {
 }
 
-export enum Rating {
-    G = "g",
-}
 
-export enum Type {
-    GIF = "gif",
-}
+export type Rating = 'G'
+
+
+export type Type  = 'gif'
 
 export interface User {
     avatar_url:    string;
